@@ -4,52 +4,36 @@ body{
     background: #F6F6F6;
 }
 
-.navbar{
-    align-items: start;
-    background-color: antiquewhite; 
-
-}
-
-.inline-block{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.logo{
-    width: 23%;
-    padding: 1%;
-}
-
 nav{
-    width: 73%;
-    padding: 1%;
-    position: absolute;
-
+    background: #DDD79D;
 }
 
-#navigation{
-    width: 70%;
-    margin-left: auto;
-    align-items: start;
+.navbar-nav a{
+    color:#7C7741;
+}
+.navbar-nav .active{
     color: #7C7741;
-    font-size: 36px;
+    font-style: bold;
 }
 
-.heroimg{
-    height: 50%;
-    padding-top: 30px;
+.jumbotron{
+    background-image: url('/Images/Hero_true.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    padding: 15px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .content {
     text-align: center;
-    color: #7C7741;
+    color: #FCE7F8;
     font-size: 100px;
 }
+
 
 .content button{
     width: 144px;
@@ -58,29 +42,33 @@ nav{
     background-color: #A49D5C;
     font-size: medium;
     border-radius: 25px;
-    stroke: none;
+    border-style: none;
 }
 
 .content button:hover{
     background-color: #7C7741;
+    border-style: none;
 }
 
 /* Beginning of Me and My Skills section*/
 
 .aboutMe h2{
     text-align: center;
-    color: #7C7741;
+    color: #F37E3B;
     padding-top: 15px;
 }
 .flexContainer{
     display: flex;
-    background-color: #DDD79D;
+    background-color: #A49D5C;
     padding-top: 10px;
     border-radius: 10px;
+    color: #F6F6F6;
 }
 
 #tools li{
     text-align: Center;
+    list-style: none;
+    color: #F6F6F6;
 }
 
 .flexContainer div{
@@ -89,8 +77,10 @@ nav{
     padding: 15px;
 
 }
-h3{
+
+.flexContainer h3{
     text-align: center;
+    color: #FCE7F8;
 }
 
 /* Beginning of Previous Work section*/
@@ -106,13 +96,14 @@ h3{
     grid-template-columns: 50% 50%;
     justify-items: center;
     padding-top: 25px;
-    margin-left: 50px;
+    margin: 50px;
+    padding-bottom: 50px;
     
 }
 
 .item1{
     grid-area: wonderbloom;
-    background-color: #F6F6F6;
+    background-color: #DDD79D;
     border-style: solid;
     border-color: #7C7741;
     padding-inline: 15px;
@@ -121,15 +112,17 @@ h3{
 }
 
 .item1 img{
-    align-items: start;
-    padding-left: 20px;
+    display: flex;
     padding-top: 15px;
+    padding-bottom: 10px;
+    justify-content: center;
 }
 
-h5{
-    color: #7C7741;
-    font-size: large;
+.item1 h5{
+    color: #FCE7F8;
+    font-size: 28px;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .item1 p{
@@ -138,7 +131,7 @@ h5{
 
 .item2{
     grid-area: wanderapp;
-    background-color: #F6F6F6;
+    background-color: #DDD79D;
     border-style: solid;
     border-color:#7C7741;
     padding-inline: 15px;
@@ -146,16 +139,25 @@ h5{
 }
 
 .item2 img{
+    display: flex;
     align-items: start;
-    padding-left: 20px;
+    padding-bottom: 10px;
 
+}
+
+.item2 h5{
+    color: #FCE7F8;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
 .item2 p{
     color:#7E7E7B;
 }
 
-.btn{
+a.btn.btn-primary{
+    display: flex;
     background-color: #F3BD53;
     border: none;
     color: #F6F6F6;
@@ -164,10 +166,11 @@ h5{
     display: inline-block;
     border-radius: 25px;
     margin-bottom: 10px;
-    justify-items: center;
+    justify-content: center;
+    
     
 }
-.btn:hover{
+a.btn.btn-primary:hover{
     background-color: #F37E3B;
 }
 
@@ -180,13 +183,13 @@ footer{
 
 footer h2{
     text-align: center;
-    color: black;
+    color: #7C7741;
     padding-top: 5px;
 }
 
 #footer{
     font-size: medium;
-    color: black;
+    color: #F6F6F6;
     text-align: center;
     padding-bottom: 10px;
 }

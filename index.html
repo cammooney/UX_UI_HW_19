@@ -3,28 +3,35 @@
     <head>
         <link rel="stylesheet" href="CSS/index.css"> 
         <title> Portfolio Setup! </title>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
     <body>
-        <header class="navbar">
-            <div class="inline-block logo">
-                <img src="Images/logo-exp1.png">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Cameron Mooney Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Previous Work</a>
+                  <a class="nav-link" href="#">Gallery</a>
+                  <a class="nav-link" href="#">Contact</a>
+                </div>
+              </div>
             </div>
-            <nav class="inline-block">
-                <ul id="navigation">
-                    <li class="inline-block"> About </li>
-                    <li class="inline-block"> Works </li>
-                    <li class="inline-block"> Gallery </li>
-                    <li class="inline-block"> Contact </li>
-                </ul>
-            </nav>
-        </header>
-        <section class="heroimg">
+          </nav>
+
+        <section class="jumbotron">
             <div class="content">
-                <img src="Images/Hero_pic1 copy.png">
                 <p> Hi, I'm Cameron Mooney</p>
-                <button> Download Resume </button>
+                <button #button > Download Resume </button>
             </div>
+            
         </section>
+
         <section class="aboutMe">
 
             <!--My UX SKills section coded using CSS Flex-->
@@ -67,30 +74,46 @@
             <div class="previousWork">
                 <h2> Previous Work </h2>
                 <div class="grid-container">
-                    <div class="card item1" style="width: 18rem;">
-                        <img src="Images/WB-logo.png" class="WBimage" alt="...">
+                    <div class="item1" style="width: 18rem;">
+                        <img src="Images/WB-logo.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5> Wonderbloom Redesign</h5>
-                            <p> This project took place over 2.5 weeks, with a team of 4. After multiple interviews and usability testing, the issues of the site seemed to be responsiveness, navigation, and the outdated styling.</p>
-                            <a class="btn"> View More </a>
+                          <h5 class="card-title">Wonderbloom Redesign</h5>
+                          <p class="card-text">This project took place over 2.5 weeks, with a team of 4. After multiple interviews and usability testing, the issues of the site seemed to be responsiveness, navigation, and the outdated styling.</p>
+                          <a href="#" class="btn btn-primary">View More</a>
                         </div>
                     </div>
-                   <div class="card item2" style="width: 18rem;">
-                        <img src="Images/Wander-logo.png" class="Wanderimage" alt="...">
+                    <div class="item2" style="width: 18rem;">
+                        <img src="Images/Wander-logo.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5>Wander Mobile App</h5>
-                            <p> This project was an individual challenge, completed over the 4 weeks. It started with user research and ended with usability testing a high-fidelity prototype. This project is ongoing and being updated to improve styling and added features. </p>
-                            <a class="btn"> View More </a>
+                          <h5 class="card-title">Wander Mobile App</h5>
+                          <p class="card-text">This project was an individual challenge, completed over the 4 weeks. It started with user research and ended with usability testing a high-fidelity prototype. This project is ongoing and being updated to improve styling and added features.</p>
+                          <a href="#" class="btn btn-primary">View More</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
         <footer>
             <h2> Get In Touch! </h2>
             <p id="footer"> cameronmooney999@gmail.com 801-608-4471 </p>
+         
         </footer>
+        <script>
+            $(document).ready(function(){
+                $("footer").on({
+                    mouseenter: function(){
+                        $(this).css("background-color", "#F37E3B");
+                    },  
+                
+                    mouseleave: function(){
+                        $(this).css("background-color", "#F3BD53");
+                    }
+                
+                });
+            });
+        </script>
 
     </body>
+    
 </html>
-
